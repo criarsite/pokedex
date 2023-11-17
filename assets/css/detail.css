@@ -1,0 +1,81 @@
+.container {
+    width: 80%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.top-card, .bottom-card {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.top-card .identification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-card .type {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.top-card .type span {
+    background-color: #cfcfcf;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.top-card .image {
+    text-align: center;
+}
+
+.bottom-card .option {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.bottom-card .detail, .bottom-card .breeding {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.bottom-card .detail div, .bottom-card .breeding div {
+    background-color: #cfcfcf;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bottom-card .abilities, .bottom-card .gender, .bottom-card .egg-group, .bottom-card .egg-cycle {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.bottom-card .abilities span, .bottom-card .gender span, .bottom-card .egg-group span, .bottom-card .egg-cycle span {
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 380px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
