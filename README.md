@@ -6,7 +6,7 @@ Este é um projeto simples de uma Pokedex, desenvolvido durante o Bootcamp DIO.
 
 Antes de começar, certifique-se de ter o Go instalado em sua máquina.
 ```bash
-go --version
+go version
 ```
 
 ## Instalação
